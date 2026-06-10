@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="bg" data-theme="dark" data-lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мариана Иванова — Mrs. Bulgaria Universe 2025</title>
+<meta name="description" content="Мариана Иванова — Мисис България Вселена 2025, First Lady 2025, основател на MPInine. Елегантност, женственост и успех.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg-primary:#0a0608;--bg-secondary:#110c0f;--bg-glass:rgba(255,255,255,0.04);--bg-glass-hover:rgba(255,255,255,0.07);--bg-card:rgba(20,12,16,0.85);--border-glass:rgba(212,165,110,0.18);--border-hover:rgba(212,165,110,0.45);--text-primary:#f5ede4;--text-secondary:#c9b49a;--text-muted:rgba(201,180,154,0.55);--gold:#d4a56e;--gold-light:#e8c49a;--gold-bright:#f0d49e;--rose:#c4778a;--gradient-hero:linear-gradient(160deg,#1a0d12 0%,#0a0608 40%,#0d0a0c 100%);--gradient-gold:linear-gradient(135deg,#c4924a 0%,#e8c49a 50%,#c4924a 100%);--gradient-overlay:linear-gradient(to bottom,rgba(10,6,8,0) 0%,rgba(10,6,8,0.7) 70%,rgba(10,6,8,0.97) 100%);--shadow-card:0 8px 40px rgba(0,0,0,0.5),0 1px 0 rgba(212,165,110,0.1);--noise-opacity:0.025;
+}
+[data-theme="light"] {
+  --bg-primary:#faf7f4;--bg-secondary:#f3ede6;--bg-glass:rgba(255,255,255,0.65);--bg-glass-hover:rgba(255,255,255,0.85);--bg-card:rgba(255,250,245,0.92);--border-glass:rgba(180,130,80,0.2);--border-hover:rgba(180,130,80,0.5);--text-primary:#1a0e12;--text-secondary:#5a3d2b;--text-muted:rgba(90,61,43,0.55);--gold:#9a6a30;--gold-light:#b8843c;--gold-bright:#c49440;--rose:#a04a5e;--gradient-hero:linear-gradient(160deg,#f5ede4 0%,#faf7f4 40%,#f3ede6 100%);--gradient-gold:linear-gradient(135deg,#8a5a20 0%,#c49440 50%,#8a5a20 100%);--gradient-overlay:linear-gradient(to bottom,rgba(250,247,244,0) 0%,rgba(250,247,244,0.6) 70%,rgba(250,247,244,0.97) 100%);--noise-opacity:0.015;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:var(--bg-primary);color:var(--text-primary);min-height:100vh;overflow-x:hidden;transition:background 0.5s ease,color 0.5s ease;position:relative}
+body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");opacity:var(--noise-opacity);pointer-events:none;z-index:0}
+
+/* NAV */
+.nav-controls{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;background:rgba(10,6,8,0.4);backdrop-filter:blur(20px) saturate(1.5);-webkit-backdrop-filter:blur(20px) saturate(1.5);border-bottom:1px solid var(--border-glass);transition:background 0.5s,border-color 0.5s}
+[data-theme="light"] .nav-controls{background:rgba(250,247,244,0.75)}
+.nav-brand{font-family:'Great Vibes',cursive;font-size:clamp(1.4rem,3vw,2rem);color:var(--gold);text-decoration:none;letter-spacing:0.02em}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.ctrl-btn{display:flex;align-items:center;gap:7px;padding:8px 16px;background:var(--bg-glass);border:1px solid var(--border-glass);border-radius:40px;color:var(--text-secondary);font-family:'Montserrat',sans-serif;font-size:0.7rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;transition:all 0.3s ease;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.ctrl-btn:hover{background:var(--bg-glass-hover);border-color:var(--border-hover);color:var(--gold);transform:translateY(-1px);box-shadow:0 4px 20px rgba(212,165,110,0.15)}
+.ctrl-btn svg{width:14px;height:14px;flex-shrink:0}
+.music-btn.playing{border-color:var(--gold);color:var(--gold);box-shadow:0 0 15px rgba(212,165,110,0.2)}
+.music-btn.playing svg{animation:pulse-icon 1.5s ease-in-out infinite}
+@keyframes pulse-icon{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.7;transform:scale(1.1)}}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 40px 80px;background:var(--gradient-hero);overflow:hidden}
+.hero::after{content:'';position:absolute;width:700px;height:700px;border-radius:50%;border:1px solid rgba(212,165,110,0.06);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;animation:ring-expand 6s ease-in-out infinite alternate}
+@keyframes ring-expand{from{transform:translate(-50%,-50%) scale(0.95);opacity:0.6}to{transform:translate(-50%,-50%) scale(1.05);opacity:1}}
+.hero-eyebrow{font-size:0.65rem;font-weight:600;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;opacity:0;animation:fade-up 1s ease 0.3s forwards}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,10vw,9rem);font-weight:300;line-height:0.9;letter-spacing:-0.01em;color:var(--text-primary);margin-bottom:16px;opacity:0;animation:fade-up 1s ease 0.5s forwards}
+.hero-name em{font-style:italic;color:var(--gold-light)}
+.hero-title-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-bottom:36px;opacity:0;animation:fade-up 1s ease 0.7s forwards}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:6px 18px;border:1px solid var(--border-glass);border-radius:30px;font-size:0.62rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-secondary);background:var(--bg-glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:all 0.3s}
+.badge-gold{border-color:rgba(212,165,110,0.4);color:var(--gold-light);background:rgba(212,165,110,0.07)}
+.hero-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:300;color:var(--text-secondary);max-width:560px;line-height:1.6;opacity:0;animation:fade-up 1s ease 0.9s forwards}
+.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:fade-up 1s ease 1.4s forwards}
+.hero-scroll span{font-size:0.55rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-muted)}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,var(--gold),transparent);animation:scroll-pulse 2s ease-in-out infinite}
+@keyframes scroll-pulse{0%,100%{opacity:0.3;transform:scaleY(0.8)}50%{opacity:1;transform:scaleY(1)}}
+@keyframes fade-up{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* DIVIDER */
+.section-divider{display:flex;align-items:center;gap:24px;padding:0 40px;margin:60px 0 40px}
+.section-divider::before,.section-divider::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,var(--border-glass),transparent)}
+.section-divider-icon{color:var(--gold);font-size:1.1rem;opacity:0.6}
+.section-label{font-size:0.6rem;font-weight:600;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding:0 8px}
+
+/* SECTIONS */
+.section{padding:80px 40px;max-width:1400px;margin:0 auto;position:relative;z-index:1}
+.section-full{padding:80px 0;position:relative;z-index:1}
+.section-header{text-align:center;margin-bottom:60px}
+.section-eyebrow{font-size:0.6rem;font-weight:600;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:300;line-height:1.1;color:var(--text-primary);margin-bottom:20px}
+.section-title em{font-style:italic;color:var(--gold-light)}
+.section-subtitle{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--text-muted);max-width:500px;margin:0 auto;line-height:1.7}
+
+/* FEATURED */
+.featured-photo{width:100%;position:relative;overflow:hidden}
+.featured-photo img{width:100%;height:85vh;object-fit:cover;object-position:center top;display:block;transition:transform 8s ease;cursor:pointer}
+.featured-photo:hover img{transform:scale(1.03)}
+.featured-photo-overlay{position:absolute;inset:0;background:var(--gradient-overlay);pointer-events:none}
+.featured-photo-caption{position:absolute;bottom:50px;left:50%;transform:translateX(-50%);text-align:center;width:90%}
+.featured-photo-caption p{font-family:'Great Vibes',cursive;font-size:clamp(2rem,6vw,4rem);color:var(--gold-light);text-shadow:0 2px 30px rgba(0,0,0,0.5)}
+
+/* AWARDS */
+.awards-strip{background:var(--bg-secondary);border-top:1px solid var(--border-glass);border-bottom:1px solid var(--border-glass);padding:50px 40px;display:flex;align-items:center;justify-content:center;gap:60px;flex-wrap:wrap}
+.award-item{text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px;position:relative}
+.award-item:not(:last-child)::after{content:'◆';position:absolute;right:-32px;top:50%;transform:translateY(-50%);font-size:0.4rem;color:var(--border-glass)}
+.award-icon{font-size:1.8rem;color:var(--gold);line-height:1}
+.award-title{font-family:'Cormorant Garamond',serif;font-size:1rem;font-weight:500;color:var(--text-primary);line-height:1.3;max-width:160px}
+.award-year{font-size:0.58rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold)}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-photo-col{position:relative}
+.about-photo-frame{position:relative;border-radius:2px;overflow:hidden}
+.about-photo-frame img{width:100%;height:650px;object-fit:cover;object-position:center top;display:block;transition:transform 0.7s ease;cursor:pointer}
+.about-photo-frame:hover img{transform:scale(1.04)}
+.about-photo-accent{position:absolute;top:-15px;left:-15px;right:15px;bottom:15px;border:1px solid var(--border-glass);border-radius:2px;pointer-events:none;transition:border-color 0.3s}
+.about-quote{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;line-height:1.4;color:var(--text-primary);margin-bottom:36px;padding-left:24px;border-left:2px solid var(--gold)}
+.about-text{font-size:0.88rem;line-height:1.9;color:var(--text-secondary);margin-bottom:20px}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;padding-top:40px;border-top:1px solid var(--border-glass)}
+.stat-item{text-align:center}
+.stat-number{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--gold);line-height:1;margin-bottom:8px;display:block}
+.stat-label{font-size:0.6rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted)}
+
+/* GALLERY MASONRY */
+.gallery-masonry{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;padding:0 40px}
+.gallery-item{position:relative;overflow:hidden;cursor:pointer;background:var(--bg-secondary)}
+.gallery-item img{width:100%;height:480px;object-fit:cover;object-position:center top;display:block;transition:transform 0.6s ease}
+.gallery-item:hover img{transform:scale(1.06)}
+.gallery-item-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 50%,rgba(10,6,8,0.7) 100%);opacity:0;transition:opacity 0.4s}
+.gallery-item:hover .gallery-item-overlay{opacity:1}
+.gallery-item-shine{position:absolute;inset:0;background:linear-gradient(135deg,rgba(212,165,110,0.12) 0%,transparent 60%);opacity:0;transition:opacity 0.4s}
+.gallery-item:hover .gallery-item-shine{opacity:1}
+
+/* WIDE SHOWCASE */
+.wide-showcase{position:relative;overflow:hidden;margin:3px 0}
+.wide-showcase img{width:100%;height:60vw;max-height:680px;min-height:380px;object-fit:cover;object-position:center;display:block;transition:transform 8s ease;cursor:pointer}
+.wide-showcase:hover img{transform:scale(1.03)}
+.wide-showcase-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(10,6,8,0.6) 0%,rgba(10,6,8,0) 50%,rgba(10,6,8,0.3) 100%);pointer-events:none}
+[data-theme="light"] .wide-showcase-overlay{background:linear-gradient(to right,rgba(250,247,244,0.55) 0%,rgba(250,247,244,0) 50%,rgba(250,247,244,0.3) 100%)}
+.wide-showcase-text{position:absolute;top:50%;left:8%;transform:translateY(-50%)}
+.wide-showcase-text .badge{margin-bottom:16px}
+.wide-showcase-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4rem);font-weight:300;color:#f5ede4;line-height:1.1;text-shadow:0 2px 20px rgba(0,0,0,0.4);max-width:500px}
+.wide-showcase-title em{font-style:italic;color:var(--gold-light)}
+
+/* FASHION */
+.fashion-grid{display:grid;grid-template-columns:5fr 4fr;gap:60px;align-items:start}
+.fashion-photos{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.fashion-photo{position:relative;overflow:hidden}
+.fashion-photo img{width:100%;height:400px;object-fit:cover;object-position:center top;display:block;transition:transform 0.6s ease;cursor:pointer}
+.fashion-photo:hover img{transform:scale(1.05)}
+.fashion-photo:first-child{grid-column:span 2}
+.fashion-photo:first-child img{height:320px}
+.fashion-content{padding-top:20px}
+.fashion-brand-logo{font-family:'Montserrat',sans-serif;font-size:0.65rem;font-weight:700;letter-spacing:0.5em;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:flex;align-items:center;gap:12px}
+.fashion-brand-logo::after{content:'';flex:1;height:1px;background:var(--border-glass)}
+.fashion-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;line-height:1.2;color:var(--text-primary);margin-bottom:28px}
+.fashion-title em{font-style:italic;color:var(--gold-light)}
+.fashion-text{font-size:0.85rem;line-height:1.9;color:var(--text-secondary);margin-bottom:16px}
+.fashion-features{margin-top:36px;display:flex;flex-direction:column;gap:16px}
+.fashion-feature{display:flex;align-items:flex-start;gap:14px;padding:16px 20px;background:var(--bg-glass);border:1px solid var(--border-glass);border-radius:2px;transition:all 0.3s}
+.fashion-feature:hover{background:var(--bg-glass-hover);border-color:var(--border-hover);transform:translateX(4px)}
+.fashion-feature-icon{color:var(--gold);font-size:1.1rem;flex-shrink:0;margin-top:2px}
+.fashion-feature-text{font-size:0.82rem;line-height:1.6;color:var(--text-secondary)}
+.fashion-feature-text strong{display:block;color:var(--text-primary);font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:4px}
+.cta-btn{display:inline-flex;align-items:center;gap:10px;margin-top:36px;padding:14px 32px;background:transparent;border:1px solid var(--gold);color:var(--gold);font-family:'Montserrat',sans-serif;font-size:0.68rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:all 0.3s ease;position:relative;overflow:hidden}
+.cta-btn::before{content:'';position:absolute;inset:0;background:var(--gold);transform:translateX(-100%);transition:transform 0.3s;z-index:-1}
+.cta-btn:hover{color:var(--bg-primary);box-shadow:0 0 30px rgba(212,165,110,0.3)}
+.cta-btn:hover::before{transform:translateX(0)}
+
+/* JOURNEY */
+.journey-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--border-glass)}
+.journey-card{background:var(--bg-primary);padding:48px 40px;position:relative;transition:background 0.3s}
+.journey-card:hover{background:var(--bg-glass)}
+.journey-year{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:var(--border-glass);line-height:1;margin-bottom:20px;transition:color 0.3s}
+.journey-card:hover .journey-year{color:var(--gold)}
+.journey-card-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;color:var(--text-primary);margin-bottom:14px;line-height:1.3}
+.journey-card-text{font-size:0.82rem;line-height:1.8;color:var(--text-secondary)}
+
+/* PORTRAIT GRID */
+.portrait-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:0 40px}
+.portrait-item{position:relative;overflow:hidden;cursor:pointer}
+.portrait-item img{width:100%;height:560px;object-fit:cover;object-position:center top;display:block;transition:transform 0.6s}
+.portrait-item:hover img{transform:scale(1.05)}
+.portrait-item-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,transparent 60%,rgba(10,6,8,0.6) 100%);opacity:0;transition:opacity 0.4s}
+.portrait-item:hover .portrait-item-overlay{opacity:1}
+
+/* PHILOSOPHY */
+.philosophy{padding:120px 40px;text-align:center;max-width:900px;margin:0 auto;position:relative;z-index:1}
+.philosophy-mark{font-family:'Cormorant Garamond',serif;font-size:8rem;font-weight:300;color:var(--border-glass);line-height:0.5;margin-bottom:40px;display:block}
+.philosophy-text{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.4rem,3.5vw,2.4rem);font-weight:300;line-height:1.5;color:var(--text-primary);margin-bottom:36px}
+.philosophy-attr{font-size:0.65rem;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold)}
+
+/* CONTACT */
+.contact-section{background:var(--bg-secondary);padding:100px 40px;border-top:1px solid var(--border-glass)}
+.contact-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.contact-left .section-title{text-align:left;margin-bottom:20px}
+.contact-left .section-eyebrow{text-align:left}
+.contact-description{font-size:0.88rem;line-height:1.8;color:var(--text-secondary);margin-bottom:36px}
+.social-links{display:flex;flex-direction:column;gap:16px}
+.social-link{display:flex;align-items:center;gap:16px;padding:16px 24px;background:var(--bg-glass);border:1px solid var(--border-glass);border-radius:2px;text-decoration:none;color:var(--text-secondary);font-size:0.8rem;font-weight:500;letter-spacing:0.05em;transition:all 0.3s;position:relative;overflow:hidden}
+.social-link::before{content:'';position:absolute;left:0;top:0;width:2px;height:100%;background:var(--gradient-gold);transform:scaleY(0);transition:transform 0.3s}
+.social-link:hover{background:var(--bg-glass-hover);border-color:var(--border-hover);color:var(--text-primary);transform:translateX(4px)}
+.social-link:hover::before{transform:scaleY(1)}
+.social-link svg{width:18px;height:18px;flex-shrink:0;color:var(--gold)}
+.social-link-name{font-weight:600;color:var(--text-primary);font-size:0.75rem;letter-spacing:0.1em;text-transform:uppercase}
+.social-link-handle{font-size:0.75rem;color:var(--text-muted);margin-left:auto}
+.contact-right{display:flex;flex-direction:column;align-items:center;gap:30px}
+.contact-portrait{position:relative;width:100%}
+.contact-portrait img{width:100%;height:420px;object-fit:cover;object-position:center top;display:block;cursor:pointer}
+.contact-portrait-frame{position:absolute;top:-8px;left:-8px;right:8px;bottom:8px;border:1px solid var(--border-glass);pointer-events:none}
+
+/* FOOTER */
+footer{padding:50px 40px;text-align:center;border-top:1px solid var(--border-glass);position:relative;z-index:1}
+.footer-brand{font-family:'Great Vibes',cursive;font-size:2.5rem;color:var(--gold);margin-bottom:16px}
+.footer-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1rem;color:var(--text-muted);margin-bottom:32px}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:30px;flex-wrap:wrap;margin-bottom:30px}
+.footer-link{font-size:0.65rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);text-decoration:none;transition:color 0.3s}
+.footer-link:hover{color:var(--gold)}
+.footer-copy{font-size:0.65rem;color:var(--text-muted);letter-spacing:0.1em}
+.footer-dot{display:inline-block;width:3px;height:3px;background:var(--gold);border-radius:50%;margin:0 10px;vertical-align:middle;opacity:0.4}
+
+/* LIGHTBOX */
+.lightbox{position:fixed;inset:0;z-index:9999;background:rgba(5,3,4,0.97);display:none;align-items:center;justify-content:center;cursor:pointer}
+.lightbox.open{display:flex;animation:lb-fade 0.3s ease}
+@keyframes lb-fade{from{opacity:0}to{opacity:1}}
+.lightbox img{max-width:92vw;max-height:92vh;object-fit:contain;cursor:default;animation:lb-zoom 0.3s ease}
+@keyframes lb-zoom{from{transform:scale(0.94);opacity:0}to{transform:scale(1);opacity:1}}
+.lightbox-close{position:absolute;top:24px;right:30px;font-size:1.8rem;color:rgba(255,255,255,0.5);cursor:pointer;background:none;border:none;line-height:1;transition:color 0.2s}
+.lightbox-close:hover{color:var(--gold)}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:var(--bg-glass);border:1px solid var(--border-glass);color:var(--text-primary);font-size:1.5rem;width:50px;height:50px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.3s;backdrop-filter:blur(10px)}
+.lightbox-nav:hover{border-color:var(--gold);color:var(--gold)}
+.lightbox-prev{left:20px}
+.lightbox-next{right:20px}
+
+/* MUSIC */
+.music-indicator{position:fixed;bottom:24px;right:24px;z-index:500;display:flex;align-items:center;gap:10px;padding:10px 20px;background:var(--bg-card);border:1px solid var(--border-glass);border-radius:40px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);opacity:0;transform:translateY(10px);transition:all 0.4s;pointer-events:none}
+.music-indicator.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.music-bars{display:flex;align-items:flex-end;gap:3px;height:18px}
+.music-bar{width:3px;background:var(--gold);border-radius:2px;animation:bar-dance 0.8s ease-in-out infinite}
+.music-bar:nth-child(1){animation-delay:0s;height:8px}
+.music-bar:nth-child(2){animation-delay:.15s;height:14px}
+.music-bar:nth-child(3){animation-delay:.3s;height:10px}
+.music-bar:nth-child(4){animation-delay:.1s;height:18px}
+.music-bar:nth-child(5){animation-delay:.25s;height:12px}
+@keyframes bar-dance{0%,100%{transform:scaleY(0.4)}50%{transform:scaleY(1)}}
+.music-label{font-size:0.65rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-secondary)}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s ease,transform 0.8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-delay-1{transition-delay:0.15s}
+.reveal-delay-2{transition-delay:0.3s}
+.reveal-delay-3{transition-delay:0.45s}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .about-grid{grid-template-columns:1fr;gap:50px}
+  .about-photo-frame img{height:450px}
+  .fashion-grid{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr;gap:50px}
+  .contact-right{order:-1}
+  .journey-grid{grid-template-columns:1fr 1fr}
+  .gallery-masonry{grid-template-columns:repeat(3,1fr)}
+  .portrait-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:700px){
+  .nav-controls{padding:14px 20px}
+  .ctrl-btn span{display:none}
+  .ctrl-btn{padding:8px 12px;gap:0}
+  .hero{padding:100px 24px 70px}
+  .hero::after{width:320px;height:320px}
+  .section{padding:60px 20px}
+  .section-full{padding:60px 0}
+  .section-divider{padding:0 20px}
+  .about-photo-frame img{height:380px}
+  .about-stats{grid-template-columns:1fr 1fr}
+  .gallery-masonry{grid-template-columns:repeat(2,1fr);padding:0 4px}
+  .gallery-item img{height:260px}
+  .portrait-grid{grid-template-columns:repeat(2,1fr);padding:0 4px}
+  .portrait-item img{height:300px}
+  .wide-showcase img{max-height:380px;min-height:220px}
+  .wide-showcase-text{left:5%}
+  .featured-photo img{height:60vh}
+  .awards-strip{gap:30px;padding:40px 20px}
+  .award-item::after{display:none}
+  .journey-grid{grid-template-columns:1fr}
+  .fashion-photos{grid-template-columns:1fr}
+  .fashion-photo:first-child{grid-column:span 1}
+  .fashion-photo img{height:280px}
+  .fashion-photo:first-child img{height:280px}
+  .contact-section{padding:70px 20px}
+  .contact-portrait img{height:320px}
+  .social-link-handle{display:none}
+  footer{padding:40px 20px}
+  .footer-links{gap:16px}
+  .music-indicator{bottom:16px;right:16px}
+  .about-photo-accent{display:none}
+  .contact-portrait-frame{display:none}
+  .philosophy{padding:70px 20px}
+  .philosophy-mark{font-size:5rem}
+}
+@media(max-width:480px){
+  .gallery-masonry{grid-template-columns:1fr 1fr}
+  .portrait-grid{grid-template-columns:1fr 1fr}
+  .gallery-item img{height:210px}
+  .portrait-item img{height:250px}
+}
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop preload="none">
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-indicator" id="musicIndicator">
+  <div class="music-bars">
+    <div class="music-bar"></div>
+    <div class="music-bar"></div>
+    <div class="music-bar"></div>
+    <div class="music-bar"></div>
+    <div class="music-bar"></div>
+  </div>
+  <span class="music-label" id="musicLabel">Музика</span>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightboxDirect()">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation();navLightbox(-1)">&#8592;</button>
+  <img id="lightboxImg" src="" alt="Мариана Иванова">
+  <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation();navLightbox(1)">&#8594;</button>
+</div>
+
+<nav class="nav-controls">
+  <a href="#" class="nav-brand">Мариана Иванова</a>
+  <div class="nav-actions">
+    <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path id="themeIcon" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <span id="themeLabel">Светла</span>
+    </button>
+    <button class="ctrl-btn" id="langBtn" onclick="toggleLang()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <span id="langLabel">EN</span>
+    </button>
+    <button class="ctrl-btn music-btn" id="musicBtn" onclick="toggleMusic()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path id="musicIcon" d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <span id="musicBtnLabel">Музика</span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow" data-bg="✦ Красота · Елегантност · Успех ✦" data-en="✦ Beauty · Elegance · Success ✦">✦ Красота · Елегантност · Успех ✦</p>
+  <h1 class="hero-name">Мариана <em>Иванова</em></h1>
+  <div class="hero-title-row">
+    <span class="badge badge-gold">Mrs. Bulgaria Universe 2025</span>
+    <span class="badge badge-gold">First Lady 2025</span>
+    <span class="badge" data-bg="Основател на MPInine" data-en="Founder of MPInine">Основател на MPInine</span>
+  </div>
+  <p class="hero-tagline lang-bg">Жена, която създава красота — в модата, в бизнеса и в живота.</p>
+  <p class="hero-tagline lang-en" style="display:none">A woman who creates beauty — in fashion, in business and in life.</p>
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <span class="lang-bg">Открий повече</span>
+    <span class="lang-en" style="display:none">Discover more</span>
+  </div>
+</section>
+
+<!-- FEATURED PHOTO 1 (wide) -->
+<div class="featured-photo">
+  <img src="photo01.jpg" alt="Мариана Иванова" loading="lazy" onclick="openLightbox('photo01.jpg',0)">
+  <div class="featured-photo-overlay"></div>
+  <div class="featured-photo-caption">
+    <p class="lang-bg">Изяществото е начин на живот</p>
+    <p class="lang-en" style="display:none">Elegance is a way of life</p>
+  </div>
+</div>
+
+<!-- AWARDS -->
+<div class="awards-strip reveal">
+  <div class="award-item">
+    <div class="award-icon">♛</div>
+    <div class="award-title">Mrs. Bulgaria Universe</div>
+    <div class="award-year">2025</div>
+  </div>
+  <div class="award-item">
+    <div class="award-icon">✦</div>
+    <div class="award-title">First Lady</div>
+    <div class="award-year">2025</div>
+  </div>
+  <div class="award-item">
+    <div class="award-icon">◈</div>
+    <div class="award-title lang-bg">Най-бързо развиващ се бранд</div>
+    <div class="award-title lang-en" style="display:none">Fastest Growing Brand</div>
+    <div class="award-year">MPInine</div>
+  </div>
+  <div class="award-item">
+    <div class="award-icon">❧</div>
+    <div class="award-title lang-bg">Световен финал — Ботсвана</div>
+    <div class="award-title lang-en" style="display:none">World Final — Botswana</div>
+    <div class="award-year">2026</div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="about-grid">
+    <div class="about-photo-col reveal">
+      <div class="about-photo-frame">
+        <img src="photo02.jpg" alt="Мариана Иванова портрет" loading="lazy" onclick="openLightbox('photo02.jpg',1)">
+      </div>
+      <div class="about-photo-accent"></div>
+    </div>
+    <div class="about-content reveal reveal-delay-1">
+      <span class="section-eyebrow lang-bg">За Мариана</span>
+      <span class="section-eyebrow lang-en" style="display:none">About Mariana</span>
+      <blockquote class="about-quote lang-bg">Дисциплината, красотата и вярата в себе си са фундаментът на всеки истински успех.</blockquote>
+      <blockquote class="about-quote lang-en" style="display:none">Discipline, beauty and belief in oneself are the foundation of every true success.</blockquote>
+      <p class="about-text lang-bg">Мариана Иванова е жена с многолика и завладяваща личност — инженер еколог по образование, преподавател по химия по призвание, дизайнер и предприемач по страст. Тя е живото доказателство, че женствеността и интелектът не само съжителстват, но се допълват с неотразима грация.</p>
+      <p class="about-text lang-en" style="display:none">Mariana Ivanova is a woman of multifaceted and captivating personality — an environmental engineer by education, a chemistry teacher by vocation, a designer and entrepreneur by passion. She is living proof that femininity and intellect not only coexist, but complement each other with irresistible grace.</p>
+      <p class="about-text lang-bg">Носителка на короната „Мисис България Вселена 2025" и титлата First Lady 2025, тя е жена, която неуморно твори — с ръцете си, с ума си и с цялото си сърце. От детска мечта до международна сцена — нейният път е вдъхновение за всяка жена, която се осмелява да мечтае.</p>
+      <p class="about-text lang-en" style="display:none">Holder of the Mrs. Bulgaria Universe 2025 crown and the First Lady 2025 title, she is a woman who tirelessly creates — with her hands, her mind and her whole heart. From a childhood dream to an international stage — her journey is an inspiration for every woman who dares to dream.</p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number">2</span>
+          <span class="stat-label lang-bg">Корони</span>
+          <span class="stat-label lang-en" style="display:none">Crowns</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2+</span>
+          <span class="stat-label lang-bg">Години MPInine</span>
+          <span class="stat-label lang-en" style="display:none">Years MPInine</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">4K+</span>
+          <span class="stat-label lang-bg">Камъка върху рокля</span>
+          <span class="stat-label lang-en" style="display:none">Crystals on a dress</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="section-divider">
+  <span class="section-label lang-bg">Галерия</span>
+  <span class="section-label lang-en" style="display:none">Gallery</span>
+  <span class="section-divider-icon">◆</span>
+</div>
+
+<!-- GALLERY — tall photos 03–10 -->
+<div class="section-full">
+  <div class="gallery-masonry">
+    <div class="gallery-item reveal" onclick="openLightbox('photo03.jpg',2)">
+      <img src="photo03.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox('photo04.jpg',3)">
+      <img src="photo04.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox('photo05.jpg',4)">
+      <img src="photo05.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox('photo06.jpg',5)">
+      <img src="photo06.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal" onclick="openLightbox('photo07.jpg',6)">
+      <img src="photo07.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox('photo08.jpg',7)">
+      <img src="photo08.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-2" onclick="openLightbox('photo09.jpg',8)">
+      <img src="photo09.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+    <div class="gallery-item reveal reveal-delay-3" onclick="openLightbox('photo10.jpg',9)">
+      <img src="photo10.jpg" alt="Мариана Иванова" loading="lazy">
+      <div class="gallery-item-overlay"></div><div class="gallery-item-shine"></div>
+    </div>
+  </div>
+</div>
+
+<!-- WIDE PHOTO 2 — photo11.jpg -->
+<div class="wide-showcase reveal">
+  <img src="photo11.jpg" alt="Мариана Иванова" loading="lazy" onclick="openLightbox('photo11.jpg',10)">
+  <div class="wide-showcase-overlay"></div>
+  <div class="wide-showcase-text">
+    <span class="badge badge-gold lang-bg">Мисис България Вселена 2025</span>
+    <span class="badge badge-gold lang-en" style="display:none">Mrs. Bulgaria Universe 2025</span>
+    <h2 class="wide-showcase-title lang-bg">Червената рокля — <em>символ на сила</em></h2>
+    <h2 class="wide-showcase-title lang-en" style="display:none">The Red Dress — <em>a symbol of power</em></h2>
+  </div>
+</div>
+
+<!-- PHILOSOPHY 1 -->
+<div class="philosophy reveal">
+  <span class="philosophy-mark">"</span>
+  <p class="philosophy-text lang-bg">Облеклото не само покрива тялото — то разказва историята на жената, която го носи. То е нейният глас, когато думите мълчат.</p>
+  <p class="philosophy-text lang-en" style="display:none">Clothing doesn't just cover the body — it tells the story of the woman who wears it. It is her voice when words are silent.</p>
+  <span class="philosophy-attr">— Мариана Иванова · MPInine</span>
+</div>
+
+<!-- FASHION / MPININE -->
+<section class="section" id="fashion">
+  <div class="fashion-grid">
+    <div class="fashion-photos reveal">
+      <div class="fashion-photo">
+        <img src="photo12.jpg" alt="MPInine колекция" loading="lazy" onclick="openLightbox('photo12.jpg',11)">
+      </div>
+      <div class="fashion-photo">
+        <img src="photo13.jpg" alt="MPInine дизайн" loading="lazy" onclick="openLightbox('photo13.jpg',12)">
+      </div>
+      <div class="fashion-photo">
+        <img src="photo14.jpg" alt="MPInine стил" loading="lazy" onclick="openLightbox('photo14.jpg',13)">
+      </div>
+    </div>
+    <div class="fashion-content reveal reveal-delay-1">
+      <div class="fashion-brand-logo">MPInine</div>
+      <h2 class="fashion-title lang-bg">Елегантност и <em>женственост</em> — комбинацията, която липсваше</h2>
+      <h2 class="fashion-title lang-en" style="display:none">Elegance and <em>femininity</em> — the combination that was missing</h2>
+      <p class="fashion-text lang-bg">MPInine е повече от марка дрехи — това е манифест за съвременната жена. Създадена от Мариана Иванова и нейната съдружничка Яна Конжагюлова с над 20 години опит в модата, марката запълва реална липса на пазара: елегантни, женствени облекла за бизнес среда.</p>
+      <p class="fashion-text lang-en" style="display:none">MPInine is more than a clothing brand — it is a manifesto for the modern woman. Created by Mariana Ivanova and her partner Yana Konzhagyulova with over 20 years of fashion experience, the brand fills a real gap in the market: elegant, feminine garments for a business environment.</p>
+      <p class="fashion-text lang-bg">Името носи инициалите на Мариана и числото 9 — нейното любимо, защото е родена на 9-то число. Всеки модел е ръчно скициран от самата Мариана — традиция, носена от детството, когато рисувала дрехи за куклите си.</p>
+      <p class="fashion-text lang-en" style="display:none">The name carries Mariana's initials and the number 9 — her favourite, as she was born on the 9th. Every model is hand-sketched by Mariana herself — a tradition carried since childhood, when she drew clothes for her dolls.</p>
+      <div class="fashion-features">
+        <div class="fashion-feature">
+          <div class="fashion-feature-icon">◈</div>
+          <div class="fashion-feature-text">
+            <strong>Haute Couture</strong>
+            <span class="lang-bg">Авторски колекции с ръчно изработени детайли и над 4000 кристала</span>
+            <span class="lang-en" style="display:none">Original collections with hand-crafted details and over 4,000 crystals</span>
+          </div>
+        </div>
+        <div class="fashion-feature">
+          <div class="fashion-feature-icon">✦</div>
+          <div class="fashion-feature-text">
+            <strong class="lang-bg">Авторски принт</strong>
+            <strong class="lang-en" style="display:none">Signature Print</strong>
+            <span class="lang-bg">MPInine притежава уникален принт, присъстващ в ключови модели от колекцията</span>
+            <span class="lang-en" style="display:none">MPInine owns a unique signature print present across key models of the collection</span>
+          </div>
+        </div>
+        <div class="fashion-feature">
+          <div class="fashion-feature-icon">❧</div>
+          <div class="fashion-feature-text">
+            <strong class="lang-bg">Женствен бизнес стил</strong>
+            <strong class="lang-en" style="display:none">Feminine Business Style</strong>
+            <span class="lang-bg">Облекла, в които жената е едновременно лидер и богиня — без компромис</span>
+            <span class="lang-en" style="display:none">Garments in which a woman is simultaneously a leader and a goddess — without compromise</span>
+          </div>
+        </div>
+      </div>
+      <a href="https://mpinine.com" target="_blank" rel="noopener" class="cta-btn">
+        <span class="lang-bg">Открий MPInine</span>
+        <span class="lang-en" style="display:none">Discover MPInine</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WIDE PHOTO 3 — photo15.jpg -->
+<div class="wide-showcase reveal">
+  <img src="photo15.jpg" alt="Мариана Иванова" loading="lazy" onclick="openLightbox('photo15.jpg',14)">
+  <div class="wide-showcase-overlay"></div>
+  <div class="wide-showcase-text">
+    <span class="badge badge-gold lang-bg">Стил без компромис</span>
+    <span class="badge badge-gold lang-en" style="display:none">Style without compromise</span>
+    <h2 class="wide-showcase-title lang-bg"><em>Всеки детайл</em> разказва история</h2>
+    <h2 class="wide-showcase-title lang-en" style="display:none"><em>Every detail</em> tells a story</h2>
+  </div>
+</div>
+
+<!-- JOURNEY -->
+<section class="section-full" id="journey">
+  <div class="section-header section reveal" style="padding-bottom:0">
+    <span class="section-eyebrow lang-bg">Пътят</span>
+    <span class="section-eyebrow lang-en" style="display:none">The Journey</span>
+    <h2 class="section-title lang-bg">От мечта до <em>корона</em></h2>
+    <h2 class="section-title lang-en" style="display:none">From dream to <em>crown</em></h2>
+  </div>
+  <div class="journey-grid" style="margin-top:60px">
+    <div class="journey-card reveal">
+      <div class="journey-year">01</div>
+      <h3 class="journey-card-title lang-bg">Детска мечта за мода</h3>
+      <h3 class="journey-card-title lang-en" style="display:none">A Childhood Dream of Fashion</h3>
+      <p class="journey-card-text lang-bg">От малка Мариана скицира и шие — първо за куклите, после за съседските деца. Майка й шие, баба й плете. Модата е в кръвта й от първия дъх.</p>
+      <p class="journey-card-text lang-en" style="display:none">From a young age Mariana sketched and sewed — first for dolls, then for neighbourhood children. Her mother sewed, her grandmother knitted. Fashion was in her blood from the very first breath.</p>
+    </div>
+    <div class="journey-card reveal reveal-delay-1">
+      <div class="journey-year">02</div>
+      <h3 class="journey-card-title lang-bg">Наука и педагогика</h3>
+      <h3 class="journey-card-title lang-en" style="display:none">Science and Teaching</h3>
+      <p class="journey-card-text lang-bg">Инженер еколог и преподавател по химия на английски език — Мариана разгражда всяко явление с научна прецизност. Именно дисциплината на учения я прави и по-добър дизайнер.</p>
+      <p class="journey-card-text lang-en" style="display:none">An environmental engineer and chemistry teacher in English — Mariana deconstructs every phenomenon with scientific precision. The discipline of a scientist is precisely what makes her a better designer.</p>
+    </div>
+    <div class="journey-card reveal reveal-delay-2">
+      <div class="journey-year">03</div>
+      <h3 class="journey-card-title lang-bg">MPInine — раждането на бранда</h3>
+      <h3 class="journey-card-title lang-en" style="display:none">MPInine — The Birth of a Brand</h3>
+      <p class="journey-card-text lang-bg">Преди две години Мариана стартира MPInine с четири модела и ясна визия. Днес марката е отличена като „Най-бързо развиващ се бранд" и дефилира на престижния Code Fashion.</p>
+      <p class="journey-card-text lang-en" style="display:none">Two years ago Mariana launched MPInine with four models and a clear vision. Today the brand is awarded "Fastest Growing Brand" and walks the prestigious Code Fashion runway.</p>
+    </div>
+  </div>
+  <div class="journey-grid" style="margin-top:1px">
+    <div class="journey-card reveal">
+      <div class="journey-year">04</div>
+      <h3 class="journey-card-title lang-bg">Конкурсът — сбъдната мечта</h3>
+      <h3 class="journey-card-title lang-en" style="display:none">The Contest — A Dream Come True</h3>
+      <p class="journey-card-text lang-bg">Поканена да участва, Мариана приема с увереност. Следи конкурса от години. Семейството я подкрепя изцяло — съпругът лично прави прическата й за финала.</p>
+      <p class="journey-card-text lang-en" style="display:none">Invited to participate, Mariana accepts with confidence. She has followed the contest for years. Her family fully supports her — her husband personally styles her hair for the final.</p>
+    </div>
+    <div class="journey-card reveal reveal-delay-1">
+      <div class="journey-year">05</div>
+      <h3 class="journey-card-title lang-bg">Короната и червената рокля</h3>
+      <h3 class="journey-card-title lang-en" style="display:none">The Crown and the Red Dress</h3>
+      <p class="journey-card-text lang-bg">На сцената — в авторска червена рокля с ефирен воал. Над 4000 камъка за световния финал. Тя не участва, за да спечели — тя участва, за да блести.</p>
+      <p class="journey-card-text lang-en" style="display:none">On stage — in an original red dress with an ethereal veil. Over 4,000 stones for the world final. She did not compete to win — she competed to shine.</p>
+    </div>
+    <div class="journey-card reveal reveal-delay-2">
+      <div class="journey-year">06</div>
+      <h3 class="journey-card-title lang-bg">Световен финал — Ботсвана 2026</h3>
+      <h3 class="journey-card-title lang-en" style="display:none">World Final — Botswana 2026</h3>
+      <p class="journey-card-text lang-bg">Следващата глава от нейната история се пише на световната сцена. Отново червено. Отново дантела. Отново с душа — с български елемент, вплетен в блясъка.</p>
+      <p class="journey-card-text lang-en" style="display:none">The next chapter of her story is written on the world stage. Red again. Lace again. With soul again — a Bulgarian element woven into the brilliance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="section-divider" style="margin-top:60px">
+  <span class="section-label lang-bg">Портрети</span>
+  <span class="section-label lang-en" style="display:none">Portraits</span>
+  <span class="section-divider-icon">◆</span>
+</div>
+
+<!-- PORTRAIT GALLERY — photo16, 17, 18 -->
+<div class="section-full">
+  <div class="portrait-grid">
+    <div class="portrait-item reveal" onclick="openLightbox('photo16.jpg',15)">
+      <img src="photo16.jpg" alt="Мариана Иванова портрет" loading="lazy">
+      <div class="portrait-item-overlay"></div>
+    </div>
+    <div class="portrait-item reveal reveal-delay-1" onclick="openLightbox('photo17.jpg',16)">
+      <img src="photo17.jpg" alt="Мариана Иванова портрет" loading="lazy">
+      <div class="portrait-item-overlay"></div>
+    </div>
+    <div class="portrait-item reveal reveal-delay-2" onclick="openLightbox('photo18.jpg',17)">
+      <img src="photo18.jpg" alt="Мариана Иванова портрет" loading="lazy">
+      <div class="portrait-item-overlay"></div>
+    </div>
+  </div>
+</div>
+
+<!-- PHILOSOPHY 2 -->
+<div class="philosophy reveal" style="padding-top:60px">
+  <span class="philosophy-mark">"</span>
+  <p class="philosophy-text lang-bg">Не бях сигурна, че ще спечеля, но много го исках. Участвах с огромен хъс — защото животът е твърде кратък, за да стоим пред затворени врати.</p>
+  <p class="philosophy-text lang-en" style="display:none">I wasn't sure I would win, but I wanted it very much. I competed with immense passion — because life is too short to stand before closed doors.</p>
+  <span class="philosophy-attr">— Мариана Иванова</span>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <div class="contact-left reveal">
+      <span class="section-eyebrow lang-bg">Свържи се</span>
+      <span class="section-eyebrow lang-en" style="display:none">Connect</span>
+      <h2 class="section-title lang-bg">Следвай <em>красотата</em></h2>
+      <h2 class="section-title lang-en" style="display:none">Follow the <em>beauty</em></h2>
+      <p class="contact-description lang-bg">Присъедини се към света на Мариана — елегантност, стил и вдъхновение всеки ден. Открий колекциите на MPInine или следвай пътя й към световния финал.</p>
+      <p class="contact-description lang-en" style="display:none">Join Mariana's world — elegance, style and inspiration every day. Discover MPInine collections or follow her journey to the world final.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/mrs_bulgaria_mariana_ivanova/" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <div>
+            <div class="social-link-name">Instagram</div>
+          </div>
+          <span class="social-link-handle">@mrs_bulgaria_mariana_ivanova</span>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61578764103359" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          <div>
+            <div class="social-link-name">Facebook</div>
+          </div>
+          <span class="social-link-handle">Мариана Иванова</span>
+        </a>
+        <a href="https://mpinine.com" target="_blank" rel="noopener" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <div>
+            <div class="social-link-name lang-bg">Уебсайт MPInine</div>
+            <div class="social-link-name lang-en" style="display:none">MPInine Website</div>
+          </div>
+          <span class="social-link-handle">mpinine.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-right reveal reveal-delay-1">
+      <div class="contact-portrait">
+        <img src="photo19.jpg" alt="Мариана Иванова" loading="lazy" onclick="openLightbox('photo19.jpg',18)">
+        <div class="contact-portrait-frame"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-brand">Мариана Иванова</div>
+  <p class="footer-tagline">Mrs. Bulgaria Universe 2025 · First Lady 2025 · MPInine</p>
+  <div class="footer-links">
+    <a href="https://mpinine.com" target="_blank" rel="noopener" class="footer-link">MPInine</a>
+    <span class="footer-dot"></span>
+    <a href="https://www.instagram.com/mrs_bulgaria_mariana_ivanova/" target="_blank" rel="noopener" class="footer-link">Instagram</a>
+    <span class="footer-dot"></span>
+    <a href="https://www.facebook.com/profile.php?id=61578764103359" target="_blank" rel="noopener" class="footer-link">Facebook</a>
+  </div>
+  <p class="footer-copy lang-bg">© 2026 Мариана Иванова · Всички права запазени</p>
+  <p class="footer-copy lang-en" style="display:none">© 2026 Mariana Ivanova · All rights reserved</p>
+</footer>
+
+<script>
+const allPhotos=['photo01.jpg','photo02.jpg','photo03.jpg','photo04.jpg','photo05.jpg','photo06.jpg','photo07.jpg','photo08.jpg','photo09.jpg','photo10.jpg','photo11.jpg','photo12.jpg','photo13.jpg','photo14.jpg','photo15.jpg','photo16.jpg','photo17.jpg','photo18.jpg','photo19.jpg'];
+let currentLightboxIndex=0;
+
+function openLightbox(src,idx){
+  currentLightboxIndex=idx;
+  document.getElementById('lightboxImg').src=src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(e){if(e.target===document.getElementById('lightbox'))closeLightboxDirect();}
+function closeLightboxDirect(){document.getElementById('lightbox').classList.remove('open');document.body.style.overflow='';}
+function navLightbox(dir){currentLightboxIndex=(currentLightboxIndex+dir+allPhotos.length)%allPhotos.length;document.getElementById('lightboxImg').src=allPhotos[currentLightboxIndex];}
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('lightbox').classList.contains('open'))return;
+  if(e.key==='Escape')closeLightboxDirect();
+  if(e.key==='ArrowLeft')navLightbox(-1);
+  if(e.key==='ArrowRight')navLightbox(1);
+});
+
+// Touch swipe
+let touchStartX=0;
+document.getElementById('lightbox').addEventListener('touchstart',function(e){touchStartX=e.touches[0].clientX;},{passive:true});
+document.getElementById('lightbox').addEventListener('touchend',function(e){const dx=e.changedTouches[0].clientX-touchStartX;if(Math.abs(dx)>50)navLightbox(dx<0?1:-1);},{passive:true});
+
+// Theme
+function toggleTheme(){
+  const html=document.documentElement;
+  const isDark=html.getAttribute('data-theme')==='dark';
+  html.setAttribute('data-theme',isDark?'light':'dark');
+  const lang=html.getAttribute('data-lang');
+  const tl=document.getElementById('themeLabel');
+  const ti=document.getElementById('themeIcon');
+  if(isDark){
+    tl.textContent=lang==='bg'?'Тъмна':'Dark';
+    ti.setAttribute('d','M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364-.707-.707M6.343 6.343l-.707-.707m12.728 0-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z');
+  }else{
+    tl.textContent=lang==='bg'?'Светла':'Light';
+    ti.setAttribute('d','M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z');
+  }
+}
+
+// Lang
+function toggleLang(){
+  const html=document.documentElement;
+  const isBg=html.getAttribute('data-lang')==='bg';
+  const nl=isBg?'en':'bg';
+  html.setAttribute('data-lang',nl);
+  html.setAttribute('lang',nl==='bg'?'bg':'en');
+  document.getElementById('langLabel').textContent=isBg?'BG':'EN';
+  document.querySelectorAll('.lang-bg').forEach(el=>{el.style.display=nl==='bg'?'':'none';});
+  document.querySelectorAll('.lang-en').forEach(el=>{el.style.display=nl==='en'?'':'none';});
+  document.querySelectorAll('[data-bg]').forEach(el=>{el.textContent=nl==='bg'?el.getAttribute('data-bg'):el.getAttribute('data-en');});
+  const isDark=html.getAttribute('data-theme')==='dark';
+  document.getElementById('themeLabel').textContent=isDark?(nl==='bg'?'Светла':'Light'):(nl==='bg'?'Тъмна':'Dark');
+  document.getElementById('musicBtnLabel').textContent=nl==='bg'?'Музика':'Music';
+  document.getElementById('musicLabel').textContent=nl==='bg'?'Музика':'Music';
+}
+
+// Music
+const audio=document.getElementById('bgMusic');
+const musicBtnEl=document.getElementById('musicBtn');
+const musicIndicator=document.getElementById('musicIndicator');
+let isPlaying=false;
+function toggleMusic(){
+  if(isPlaying){
+    audio.pause();isPlaying=false;
+    musicBtnEl.classList.remove('playing');
+    musicIndicator.classList.remove('visible');
+  }else{
+    audio.play().then(()=>{
+      isPlaying=true;
+      musicBtnEl.classList.add('playing');
+      musicIndicator.classList.add('visible');
+    }).catch(()=>{});
+  }
+}
+audio.addEventListener('ended',()=>{isPlaying=false;musicBtnEl.classList.remove('playing');musicIndicator.classList.remove('visible');});
+
+// Scroll reveal
+const revealEls=document.querySelectorAll('.reveal');
+function checkReveal(){revealEls.forEach(el=>{if(el.getBoundingClientRect().top<window.innerHeight*0.88)el.classList.add('visible');});}
+window.addEventListener('scroll',checkReveal,{passive:true});
+window.addEventListener('resize',checkReveal,{passive:true});
+setTimeout(checkReveal,100);
+
+// Hero parallax
+window.addEventListener('scroll',function(){
+  const sy=window.scrollY;
+  const hero=document.querySelector('.hero');
+  if(hero&&sy<window.innerHeight*1.5){
+    hero.style.transform='translateY('+(sy*0.3)+'px)';
+    hero.style.opacity=1-sy/(window.innerHeight*0.8);
+  }
+},{passive:true});
+</script>
+</body>
+</html>
